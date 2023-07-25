@@ -26,7 +26,6 @@ public class ProductService implements ProductUseCase {
     private final RestTemplate restTemplate;
     private final CategoryService categoryService;
     private final ProductMapper productMapper;
-
     @Value("${spring.external.base-url}")
     private String baseUrl;
 
@@ -34,7 +33,6 @@ public class ProductService implements ProductUseCase {
      * @return Products' list
      */
     public List<ProductGetAllResponseDto> getAllProducts() {
-
         ResponseEntity<Product[]> responsePlatziApi = restTemplate.exchange(baseUrl+"/products", HttpMethod.GET, null,  Product[].class);
 
         if ( responsePlatziApi.getStatusCode().is2xxSuccessful() ) {

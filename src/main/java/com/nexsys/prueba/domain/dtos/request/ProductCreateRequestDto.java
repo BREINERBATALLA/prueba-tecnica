@@ -1,7 +1,6 @@
 package com.nexsys.prueba.domain.dtos.request;
 
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Positive;
 import org.hibernate.validator.constraints.URL;
 

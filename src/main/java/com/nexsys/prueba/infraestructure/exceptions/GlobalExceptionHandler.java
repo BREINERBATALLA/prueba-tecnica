@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
 
 
+import java.util.Collections;
 import java.util.List;
 
 @RestControllerAdvice
@@ -26,7 +27,7 @@ public class GlobalExceptionHandler  {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ExceptionResponseDto> handleInvalidArgument(MethodArgumentNotValidException ex) {
-        List<String> defaultMessages = null;
+        List<String> defaultMessages = Collections.emptyList();
         ex.getBindingResult().getFieldErrors()
                 .forEach(fieldError -> defaultMessages.add(fieldError.getDefaultMessage()));
         ExceptionResponseDto response = ExceptionResponseDto.builder()

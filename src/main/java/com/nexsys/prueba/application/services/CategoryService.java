@@ -22,7 +22,6 @@ public class CategoryService implements CategoryUseCase {
 
     private final RestTemplate restTemplate;
     private final CategoryMapper categoryMapper;
-
     @Value("${spring.external.base-url}")
     private String baseUrl;
 
@@ -30,7 +29,6 @@ public class CategoryService implements CategoryUseCase {
      * @return Categories' list.
      */
     public List<CategoryGetAllResponseDto> getAllCategories() {
-
         ResponseEntity<Category[]> responsePlatziApi = restTemplate.exchange(
                 baseUrl+"/categories", HttpMethod.GET, null, Category[].class
         );
@@ -40,7 +38,6 @@ public class CategoryService implements CategoryUseCase {
 
         } else {
             throw new ErrorResponseApiException("Something went wrong with the external api");
-
         }
     }
 
