@@ -6,9 +6,6 @@ Use of RestTemplate, dto pattern, pattern mapper, 3 layer architecture implement
 **Specification of the api**
 
 You can see the swagger's ui after running app on: **http://localhost:8080/swagger-ui/index.html**
-https://i.postimg.cc/5y53SjSW/oa1.png
-
-![Data Open Api](https://i.postimg.cc/5y53SjSW/oa1.png)
 
 **Schemas**
 
