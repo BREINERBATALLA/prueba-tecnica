@@ -1,1 +1,3 @@
-
+spring:
+  external:
+    base-url: "https://api.escuelajs.co/api/v1"
