@@ -6,8 +6,9 @@ Use of RestTemplate, dto pattern, pattern mapper, 3 layer architecture implement
 **Specification of the api**
 
 You can see the swagger's ui after running app on: **http://localhost:8080/swagger-ui/index.html**
+https://i.postimg.cc/5y53SjSW/oa1.png
 
-![Data Open Api](https://i.postimg.cc/TY9bCqj4/oa1.png)
+![Data Open Api](https://i.postimg.cc/5y53SjSW/oa1.png)
 
 **Schemas**
 
@@ -15,7 +16,7 @@ You can see the swagger's ui after running app on: **http://localhost:8080/swagg
 
 **Endpoints**
 
-![Endpoints](https://i.postimg.cc/kMWKtd29/endpoints.png)
+![Endpoints](https://i.postimg.cc/QCZm7c5q/endpoints.png)
 
 **Example: Get all categories**
 
